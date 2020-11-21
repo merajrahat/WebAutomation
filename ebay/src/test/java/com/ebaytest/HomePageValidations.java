@@ -1,7 +1,7 @@
 package com.ebaytest;
 
 import com.ebay.HomePage;
-import com.peoplentech.webautomation.TestBase;
+import com.peoplentech.webautomation.base.TestBase;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
