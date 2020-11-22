@@ -8,27 +8,27 @@ import org.testng.annotations.Test;
 
 public class HomePageValidations extends TestBase {
 
-    @Test
+    @Test (enabled = false)
     public void validateUserBeingAbleToTypeOnSearchBar(){
 
         HomePage homePage = PageFactory.initElements(driver,HomePage.class);
         homePage.typeOnSearchBar();
     }
 
-    @Test
+    @Test (enabled = false)
     public void validateUserBeingAbleToSearchForAnItem(){
         HomePage homePage = PageFactory.initElements(driver,HomePage.class);
         homePage.typeOnSearchBar();
         homePage.clickOnSearchButton();
     }
 
-    @Test
+    @Test (enabled = false)
     public void validateUserBeingAbleToClickOnSignInButton() {
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         homePage.clickOnSignInButton();
     }
 
-    @Test
+    @Test (enabled = false)
     public void validateUserBeingAbleToClickOnDailyDealsButton(){
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         homePage.clickOnDaileyDeals();
