@@ -37,11 +37,11 @@ public class TestBase {
     public static ExtentReports extent;
     public static String sauceUserName = "";
     public static String sauceKey = "";
-    public static String browserStackUserName = "";
-    public static String browserStackKey = "";
+    public static String browserStackUserName = "rahatmeraj1";
+    public static String browserStackKey = "GykczAWsSDhccDHdzBcE";
     //http:// + username + : + key + specific url for cloud
     public static String SAUCE_URL = "http://" + sauceUserName + ":" + sauceKey + "@ondemand.saucelabs.com:80/wd/hub";
-    public static String BROWERSTACK_URL = "http://" + browserStackUserName + ":" + browserStackKey + "@hub-cloud.browserstack.com:80/wd/hub";
+    public static String BROWERSTACK_URL = "https://" + browserStackUserName + ":" + browserStackKey + "@hub-cloud.browserstack.com/wd/hub";
     private static Logger LOGGER = Logger.getLogger(TestBase.class);
 
     /**
@@ -97,7 +97,7 @@ public class TestBase {
                                            String envName) throws MalformedURLException {
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         desiredCapabilities.setCapability("name", "Cloud Execution");
-        desiredCapabilities.setCapability("browserName", browser);
+        desiredCapabilities.setCapability("browser", browser);
         desiredCapabilities.setCapability("browser_version", browserVersion);
         desiredCapabilities.setCapability("os", platform);
         desiredCapabilities.setCapability("os_version", "Mojave");

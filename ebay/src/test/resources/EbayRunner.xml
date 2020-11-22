@@ -5,11 +5,11 @@
 
     <parameter name="browser" value="chrome"/>
     <parameter name="url" value="https://www.ebay.com"/>
-    <parameter name="platform" value="windows"/>
+    <parameter name="platform" value="OS X"/>
 
-    <parameter name="cloud" value="false"/>
-    <parameter name="envName" value="saucelabs"/>
-    <parameter name="browserVersion" value="77.0"/>
+    <parameter name="cloud" value="true"/>
+    <parameter name="envName" value="browserstack"/>
+    <parameter name="browserVersion" value="latest-beta"/>
 
     <test name="Automation tests">
         <classes>
